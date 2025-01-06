@@ -11,7 +11,9 @@ java -jar bankSimulation.jar
 
 
 ## Directory:
+
 //thc225Chakif
+
     -README.md
 
     -bankSimulation.jar
@@ -29,7 +31,7 @@ java -jar bankSimulation.jar
         -ojdbc11.jar
 
     //dataGeneration
-    
+
         -dataGeneration.txt
 
 
