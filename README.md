@@ -1,5 +1,7 @@
 This project is a banking simulation developed in Java that models a real-world banking interface. It manages many banking operations for both users and managers, including: loans, credit/debit cards (this includes opening or closing a new card or paying off a card balance), deposits/withdrawals, and fund transfers. The application uses JDBC statements to connect to an Oracle database and make any necessary changes. Included below are the project's directory, restrictions, and good testing practices.
 
+
+
 COMMANDS I RUN IN simulated-bank DIRECTORY TO RUN:
 To recreate jar file: 
 jar cfmv bankSimulation.jar Manifest/Manifest.txt -C . bankSimulation
@@ -7,7 +9,8 @@ To run jar file:
 java -jar bankSimulation.jar 
 
 
-Directory:
+
+## Directory:
 //thc225Chakif
     -README.md
     -bankSimulation.jar
@@ -34,13 +37,13 @@ Also, all input is case-sensitive. So 'savings' won't be accepted for 'Savings'.
 
 Important information/constraints for each section:
 
-Managers:
+## Managers:
 -a manager is assigned to each customer in the bank 
 -a manager is able to view all loans, all accounts, as well the sums of the total balances of all loans and accounts in the bank
 -a manager is also able to view a yearly, monthly, and daily breakdown of transactions that take place in the bank
 
 
-Customers:
+##Customers:
 -a customer is able to view all of their accounts, cards, and loans
 -a customer is able to make both loan payments and credit card payments
 -a customer is able to make both deposits and withdrawals from any of their accounts
@@ -48,7 +51,7 @@ Customers:
 -a customer is able to make both card purchases and transfers
 
 
-Accounts:
+## Accounts:
 -3 types: savings, checking, and investment
 -base interest rates: savings - 1.5%, checking - 0.5%, investment - 5.0%
 -savings accounts have a starting minimum balance of $250
@@ -67,7 +70,7 @@ Accounts:
 -I did not enforce the ATM/online only deposit/withdrawals constraint
 
 
-Cards:
+## Cards:
 -2 types: credit and debit cards
 -debit cards are exclusive to checking accounts, but credit cards are available to both savings and checking accounts
 -investment accounts cannot holds cards/make card transactions
@@ -85,7 +88,7 @@ Cards:
 -card payments can only be made with the balance of the account they're attached to
 
 
-Loans:
+## Loans:
 -2 types: secured and unsecured
 -users are able to manually input their loan reason
 -interest rates vary between secured and unsecured loans for NEW loans
@@ -98,7 +101,7 @@ Loans:
 -loan payments can only be made with the balance of the account they're attached to
 
 
-Deposits/Withdrawals:
+## Deposits/Withdrawals:
 -I did not enforce the ATM/online only deposit/withdrawals constraint. Both deposits/withdrawals can be made through the interface 
 -both deposits and withdrawals can only be made through a user's own accounts
 -deposits are made on a cash-only basis - user inputs a cash amount and we assume it to be valid
@@ -110,14 +113,14 @@ Deposits/Withdrawals:
 -withdrawals are recorded in the 'Withdrawals' table with a unique withdrawal id and withdrawal date
 
 
-Card purchases:
+## Card purchases:
 -purchases using a debit card can not make the balance of the attached checking account go negative
 -if a card purchase causes a savings account balance to go below the minimum, a $35 penalty is added to the account balance for the initial and each subsequent transaction while under the minimum
 -debit card purchase lowers checking account balance, while a credit card purchase raises the running total on a credit card
 -all card purchases are recorded in the 'Purchases' table with a unqique purchase id and purchase date
 
 
-Fund transfers:
+## Fund transfers:
 -fund transfers can only be made between the same customer's accounts, cannot be made to accounts not owned by them
 -fund transfers follow the same balance constraints for checking and savings accounts as previously mentioned for other transactions
 -all fund transfers are recorded in the 'FundTransfers' table with a unique transfer id and transfer date
