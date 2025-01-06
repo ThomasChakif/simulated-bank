@@ -13,28 +13,21 @@ java -jar bankSimulation.jar
 ## Directory:
 
     //simulated-bank
-
         -README.md
-
         -bankSimulation.jar
 
         //bankSimulation
-
             -bankSimulation.java
-
             -bankSimulation.class
 
         //Manifest
-
             -Manifest.txt
-
             -ojdbc11.jar
         
         //er-diagram
             -ThomasChakif_BankSimulation_Project_ER-Diagram.pdf
 
         //dataGeneration
-
             -dataGeneration.txt
 
 
