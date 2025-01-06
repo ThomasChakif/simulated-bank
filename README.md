@@ -13,14 +13,23 @@ java -jar bankSimulation.jar
 ## Directory:
 //thc225Chakif
     -README.md
+
     -bankSimulation.jar
+
     //bankSimulation
+
         -bankSimulation.java
+
         -bankSimulation.class
+
     //Manifest
+
         -Manifest.txt
+
         -ojdbc11.jar
+
     //dataGeneration
+    
         -dataGeneration.txt
 
 
@@ -45,7 +54,7 @@ Important information/constraints for each section:
 -a manager is also able to view a yearly, monthly, and daily breakdown of transactions that take place in the bank
 
 
-##Customers:
+## Customers:
 -a customer is able to view all of their accounts, cards, and loans
 
 -a customer is able to make both loan payments and credit card payments
@@ -64,9 +73,7 @@ Important information/constraints for each section:
 
 -savings accounts have a starting minimum balance of $250
 
-    -a $35 penalty is added if a withdrawal, purchase, or other payment brings it below the minimum balance
-
-    -this happens for every transaction made while under the minimum balance, not just the initial transaction that brings it below the minimum
+-a $35 penalty is added if a withdrawal, purchase, or other payment brings it below the minimum balance (this happens for every transaction made while under the minimum balance, not just the initial transaction that brings it below the minimum)
 
 -if a purchase brings a saving account's running balance to above the credit limit, it is rejected
 
@@ -78,15 +85,11 @@ Important information/constraints for each section:
 
 -deposits/withdrawals can only be made between a customer's own accounts
 
--deposits made when starting a new account are purely cash
-
-    -i.e., you cannot transfer funds from one account to fund the creation of a new account
+-deposits made when starting a new account are purely cash (i.e., you cannot transfer funds from one account to fund the creation of a new account)
 
 -different starting deposits are required depending on account type
 
--investment accounts can only choose between a set of given assets
-
-    -each account can only hold one type of asset (stocks, bonds, index funds, etc.)
+-investment accounts can only choose between a set of given assets (each account can only hold one type of asset (stocks, bonds, index funds, etc.))
 
 
 
@@ -116,7 +119,7 @@ Important information/constraints for each section:
 
 -users can replace cards. All information is stored, old card is deleted, and a card with a new number is made with the old card's info
 
-    -when a card is deleted, its past purchases are not preserved and therefore do not show up in the running totals within the manager menu
+-when a card is deleted, its past purchases are not preserved and therefore do not show up in the running totals within the manager menu
 
 -card payments are recorded in the 'CardPayments' table with a unique payment id and payment date
 
@@ -130,7 +133,7 @@ Important information/constraints for each section:
 
 -interest rates vary between secured and unsecured loans for NEW loans
 
-    -secured loans: any value between 5.0 and 15.0, unsecured loans: any value between 15.0 and 30.0
+-interest rates on secured loans: any value between 5.0 and 15.0, unsecured loans: any value between 15.0 and 30.0
 
 -all new loan terms are 36 months, or 3 years for simplicity. Minimum payments are calculated (in a simple manner) as (loan payment/months left) / interest rate
 
