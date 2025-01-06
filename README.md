@@ -1,93 +1,123 @@
-# Simulated Bank 
+This project is a banking simulation developed in Java that models a real-world banking interface. It manages many banking operations for both users and managers, including: loans, credit/debit cards (this includes opening or closing a new card or paying off a card balance), deposits/withdrawals, and fund transfers. The application uses JDBC statements to connect to an Oracle database and make any necessary changes. Included below are the project's directory, restrictions, and good testing practices.
+
+COMMANDS I RUN IN simulated-bank DIRECTORY TO RUN:
+To recreate jar file: 
+jar cfmv bankSimulation.jar Manifest/Manifest.txt -C . bankSimulation
+To run jar file: 
+java -jar bankSimulation.jar 
+
+
+Directory:
+//thc225Chakif
+    -README.md
+    -bankSimulation.jar
+    //bankSimulation
+        -bankSimulation.java
+        -bankSimulation.class
+    //Manifest
+        -Manifest.txt
+        -ojdbc11.jar
+    //dataGeneration
+        -dataGeneration.txt
+
+
+WHAT TO KNOW FOR TESTING:
+Good customer to test has Customer ID: 13805. Customer has savings, checking, and investment accounts as well as credit/debit cards attached to them.
+They also have loans attached to these accounts, so you can test all functionalities: loan payments, credit card payments, deposits, withdrawals, 
+new/replacement cards, card purchases, and fund transfers.
+
+However, you can also select '3' in the first menu to create a blank new customer if testing is preferred that way.
+
+Also, all input is case-sensitive. So 'savings' won't be accepted for 'Savings'.
 
 
 
-## Getting started
+Important information/constraints for each section:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Managers:
+-a manager is assigned to each customer in the bank 
+-a manager is able to view all loans, all accounts, as well the sums of the total balances of all loans and accounts in the bank
+-a manager is also able to view a yearly, monthly, and daily breakdown of transactions that take place in the bank
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-## Add your files
+Customers:
+-a customer is able to view all of their accounts, cards, and loans
+-a customer is able to make both loan payments and credit card payments
+-a customer is able to make both deposits and withdrawals from any of their accounts
+-a customer is able to add new accounts, take out new loans, and obtain/replace a card
+-a customer is able to make both card purchases and transfers
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-```
-cd existing_repo
-git remote add origin http://gitlab.cse.lehigh.edu/thc225/simulated-bank.git
-git branch -M main
-git push -uf origin main
-```
+Accounts:
+-3 types: savings, checking, and investment
+-base interest rates: savings - 1.5%, checking - 0.5%, investment - 5.0%
+-savings accounts have a starting minimum balance of $250
+    -a $35 penalty is added if a withdrawal, purchase, or other payment brings it below the minimum balance
+    -this happens for every transaction made while under the minimum balance, not just the initial transaction that brings it below the minimum
+-if a purchase brings a saving account's running balance to above the credit limit, it is rejected
+-if a purchase using a checking account is made, it is rejected if it brings the account balance below $0
+-investment accounts cannot holds cards/make card transactions
+-fund transfers can only be made between a customer's own accounts
+-deposits/withdrawals can only be made between a customer's own accounts
+-deposits made when starting a new account are purely cash
+    -i.e., you cannot transfer funds from one account to fund the creation of a new account
+-different starting deposits are required depending on account type
+-investment accounts can only choose between a set of given assets
+    -each account can only hold one type of asset (stocks, bonds, index funds, etc.)
+-I did not enforce the ATM/online only deposit/withdrawals constraint
 
-## Integrate with your tools
 
-- [ ] [Set up project integrations](http://gitlab.cse.lehigh.edu/thc225/simulated-bank/-/settings/integrations)
+Cards:
+-2 types: credit and debit cards
+-debit cards are exclusive to checking accounts, but credit cards are available to both savings and checking accounts
+-investment accounts cannot holds cards/make card transactions
+-the 'balance' of a debit card is just the balance of the attached checking account
+-purchases using debit cards that bring the associated checking account's balance below $0 are rejected
+-new credit cards have a base credit limit of $2000
+-new credit card interest rates are random between 15.0% and 30.0%
+-cards MUST be attached to a pre-existing savings or checking account. A customer cannot own a card without owning an account to attach it to
+-when a new purchase on a credit card is made, the running balance is updated, not the balance due. The balance due represents the amount owed as of the user's last statement, and the running balance is all outstanding debt on the card
+-can't make loan payments with credit cards, but can with debit cards through its checking account balance
+-payments on credit cards can only be made on cards with a balance_due > 0 (doesn't look at running balance)
+-users can replace cards. All information is stored, old card is deleted, and a card with a new number is made with the old card's info
+    -when a card is deleted, its past purchases are not preserved and therefore do not show up in the running totals within the manager menu
+-card payments are recorded in the 'CardPayments' table with a unique payment id and payment date
+-card payments can only be made with the balance of the account they're attached to
 
-## Collaborate with your team
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Loans:
+-2 types: secured and unsecured
+-users are able to manually input their loan reason
+-interest rates vary between secured and unsecured loans for NEW loans
+    -secured loans: any value between 5.0 and 15.0, unsecured loans: any value between 15.0 and 30.0
+-all new loan terms are 36 months, or 3 years for simplicity. Minimum payments are calculated (in a simple manner) as (loan payment/months left) / interest rate
+-loans MUST be attached to an account (can be any kind). A custoemr cannot have a loan without owning an account to attach it to
+-loans have a status: Not Paid Off/Open if the loan amount > 0 and Paid Off/Closed if the loan amount < 0
+-loan payments are recorded in the 'LoanPayments' table with a unique payment id and payment date
+-loan payments follow the same checking/saving account balance restraints as all other transactions (minimum balance, credit limit, checking balance constraints)
+-loan payments can only be made with the balance of the account they're attached to
 
-## Test and Deploy
 
-Use the built-in continuous integration in GitLab.
+Deposits/Withdrawals:
+-I did not enforce the ATM/online only deposit/withdrawals constraint. Both deposits/withdrawals can be made through the interface 
+-both deposits and withdrawals can only be made through a user's own accounts
+-deposits are made on a cash-only basis - user inputs a cash amount and we assume it to be valid
+-deposits can be made to any account type
+-deposits are recorded in the 'Deposits' table with a unique deposit id and deposit date
+-initial deposits when creating a new account are NOT recorded in the Deposits table
+-withdrawals can not make a checking account balance go negative
+-if a withdrawal causes a savings account balance to go below the minimum, a $35 penalty is added to the account balance for the initial and each subsequent transaction while under the minimum
+-withdrawals are recorded in the 'Withdrawals' table with a unique withdrawal id and withdrawal date
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-***
+Card purchases:
+-purchases using a debit card can not make the balance of the attached checking account go negative
+-if a card purchase causes a savings account balance to go below the minimum, a $35 penalty is added to the account balance for the initial and each subsequent transaction while under the minimum
+-debit card purchase lowers checking account balance, while a credit card purchase raises the running total on a credit card
+-all card purchases are recorded in the 'Purchases' table with a unqique purchase id and purchase date
 
-# Editing this README
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Fund transfers:
+-fund transfers can only be made between the same customer's accounts, cannot be made to accounts not owned by them
+-fund transfers follow the same balance constraints for checking and savings accounts as previously mentioned for other transactions
+-all fund transfers are recorded in the 'FundTransfers' table with a unique transfer id and transfer date

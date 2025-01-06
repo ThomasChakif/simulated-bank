@@ -1,0 +1,404 @@
+All code I manually generated to populate my tables. All other code in database was added during testing.
+
+
+Insert commands for ‘Manager’ table:
+insert into Manager(Manager_ID) values (1001);
+insert into Manager(Manager_ID) values (2002);
+insert into Manager(Manager_ID) values (3003);
+insert into Manager(Manager_ID) values (4004);
+insert into Manager(Manager_ID) values (5005);
+
+
+
+
+Insert commands for 'Customer' table:
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (19517, 'Roman Reigns', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (25959, 'Seth Rollins', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (99992, 'Sturdy Sal', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (48258, 'AJ Styles', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (87378, 'Bray Wyatt', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (13132, 'Jinder Mahal', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (13380, 'Randy Orton', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (77222, 'John Cena', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (32032, 'Shawn Michaels', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (79035, 'Eddie Guerrero', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (51806, 'Rey Mysterio', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (89785, 'Kenny Omega', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (84794, 'Darby Allin', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (65099, 'Daniel Bryan', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (86233, 'Kurt Angle', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (93700, 'Rob Dam', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (55693, 'Paul Levesque', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (84242, 'Bobby Lashley', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (72396, 'Man Kind', 1001);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (77142, 'Kofi Kingston', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (53614, 'Konosuke Takeshita', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (42069, 'Becky Lynch', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (47929, 'Sasha Banks', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (37448, 'Charlotte Flair', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (71731, 'Jaime Hayter', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (54871, 'Swerve Strickland', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (82694, 'Samoa Joe', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (28674, 'Finn Balor', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (62667, 'Ricochet Mann', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (85054, 'Jey Uso', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (88402, 'Jimmy Uso', 2002);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (65974, 'Solo Sikoa', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (64820, 'Jacob Fatu', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (46919, 'Braun Strowman', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (62563, 'Christopher Daniels', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (71931, 'Bret Hart', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (42409, 'Owen Hart', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (27641, 'Davey Smith', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (50991, 'Steve Austin', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (69209, 'Dwayne Johnson', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (28437, 'Chris Jericho', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (43733, 'Mike Awesome', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (70565, 'Maseto Tanaka', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (41746, 'CM Punk', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (25856, 'William Regal', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (58316, 'Sami Zayn', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (25903, 'Kevin Owens', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (91943, 'Trick Williams', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (37681, 'Neville Pac', 3003);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (50820, 'Shinsuka Nakamura', 4004);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (79774, 'Kaz Okada', 4004);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (77607, 'Andrade Almas', 4004);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (37280, 'Scott Hall', 4004);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (71407, 'Mike Miz', 5005);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (96800, 'R Truth', 5005);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (40705, 'Dolph Ziggler', 5005);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (25966, 'Dustin Rhodes', 5005);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (90185, 'Gunther Walter', 5005);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (42800, 'Adam Page', 5005);
+insert into Customer (CUSTOMER_ID, NAME, MANAGER_ID) values (74770, 'Nick Jackson', 5005);
+
+
+
+
+
+Insert commands for ‘Account’ table:
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A48258', 'Savings', '48258', 32972.35, 293.45, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A87378', 'Savings', '87378', 42712.05, 407.29, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A13132', 'Savings', '13132', 34316.44, 383.71, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A13380', 'Savings', '13380', 82721.32, 278.46, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A77222', 'Savings', '77222', 2239.68, 304.04, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A32032', 'Savings', '32032', 29612.89, 231.3, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A79035', 'Savings', '79035', 68891.76, 171.38, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A51806', 'Savings', '51806', 29203.62, 580.36, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A89785', 'Savings', '89785', 5563.88, 378.98, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A84794', 'Savings', '84794', 53083.38, 185.65, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A65099', 'Savings', '65099', 3287.24, 138.28, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A86233', 'Savings', '86233', 88457.36, 469.32, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A93700', 'Savings', '93700', 10108.25, 206.56, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A55693', 'Savings', '55693', 64410.04, 158.56, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A84242', 'Savings', '84242', 89305.58, 370.05, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A72396', 'Savings', '72396', 95468.43, 263.15, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A77142', 'Savings', '77142', 96334.75, 387.75, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A53614', 'Savings', '53614', 96094.43, 396.34, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A42069', 'Savings', '42069', 69522.69, 110.89, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A47929', 'Savings', '47929', 66948.31, 36.97, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A37448', 'Savings', '37448', 64229.76, 300.45, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A71731', 'Savings', '71731', 28288.57, 283.74, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A54871', 'Savings', '54871', 47198.37, 125.83, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A82694', 'Savings', '82694', 16272.85, 182.25, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A28674', 'Savings', '28674', 52104.32, 101.13, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A62667', 'Savings', '62667', 68991.71, 275.58, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A85054', 'Checking', '85054', 33578.19, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A88402', 'Checking', '88402', 96777.83, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A65974', 'Checking', '65974', 82920.64, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A64820', 'Checking', '64820', 42902.14, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A46919', 'Checking', '46919', 69180.22, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A62563', 'Checking', '62563', 44974.24, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A71931', 'Checking', '71931', 64079.37, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A42409', 'Checking', '42409', 57621.44, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A27641', 'Checking', '27641', 62411.97, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A50991', 'Checking', '50991', 48226.93, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A69209', 'Checking', '69209', 39566.86, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A28437', 'Checking', '28437', 27162.27, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A43733', 'Checking', '43733', 28666.52, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A70565', 'Checking', '70565', 51218.26, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A41746', 'Checking', '41746', 77824.22, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A25856', 'Checking', '25856', 90900.03, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A58316', 'Checking', '58316', 2968.28, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A25903', 'Checking', '25903', 65224.74, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A91943', 'Checking', '91943', 50417.86, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A37681', 'Checking', '37681', 756.76, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A50820', 'Checking', '50820', 65048.4, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A79774', 'Checking', '79774', 91651.54, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A77607', 'Checking', '77607', 47777.7, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A37280', 'Checking', '37280', 99097.21, Null, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A71407', 'Investment', '71407', 59807.0, 154.44, 'Mutual Funds');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A96800', 'Investment', '96800', 71807.58, 383.47, 'Stocks');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A40705', 'Investment', '40705', 96840.63, 513.62, 'Stocks');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A25966', 'Investment', '25966', 7090.7, 265.63, 'Bonds');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A90185', 'Investment', '90185', 60331.35, 303.1, 'Real Estate');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A42800', 'Investment', '42800', 83477.17, 394.33, 'Real Estate');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A74770', 'Investment', '74770', 59651.93, 231.93, 'Mutual Funds');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A19517', 'Investment', '19517', 5951.93, 21.93, 'Mutual Funds');
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A25959', 'Savings', '25959', 74229.76, 330.45, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A99992', 'Savings', '99992', 38288.57, 253.74, Null);
+insert into Account (ACCOUNT_ID, ACCOUNT_TYPE, CUSTOMER_ID, ACCT_BALANCE, MIN_BALANCE, ASSET_LIST) values ('A423258', 'Checking', '48258', 272.01, Null, Null);
+
+
+ALTER TABLE Account ADD INTEREST_RATE DECIMAL(5, 2);
+
+
+UPDATE Account 
+SET INTEREST_RATE = 1.5 
+WHERE ACCOUNT_TYPE = 'Savings';
+
+
+UPDATE Account 
+SET INTEREST_RATE = 0.5
+WHERE ACCOUNT_TYPE = 'Checking';
+
+
+UPDATE Account 
+SET INTEREST_RATE = 5.0
+WHERE ACCOUNT_TYPE = 'Investment';
+
+
+UPDATE Account
+SET MIN_BALANCE = NULL
+WHERE ACCOUNT_TYPE = 'Checking';
+
+
+UPDATE Account
+SET MIN_BALANCE = NULL
+WHERE ACCOUNT_TYPE = 'Investment';
+
+
+
+
+Insert commands for ‘Card’ table:
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '1239967890123456', 'A48258');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '4234567890123456', 'A87378');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '32345678630123456', 'A13132');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '4234567824123456', 'A13380');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '5234567490123456', 'A77222');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '6234562490123456', 'A32032');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '7234567890743456', 'A79035');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '8234427890123456', 'A51806');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '9234567893623456', 'A89785');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '1025567890123450', 'A84794');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '1678901234567891', 'A65099');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '5678901234567892', 'A86233');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '3134567890167893', 'A93700');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '4138901234567894', 'A55693');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '5134567890123455', 'A84242');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '6178901234567896', 'A72396');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '7138901234567897', 'A77142');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Credit', '8134590123456798', 'A53614');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '1114567890123456', 'A85054');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '2234533234567890', 'A88402');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '3232267890567890', 'A65974');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '4234501234544890', 'A64820');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '5234555890123890', 'A46919');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '5678901266567890', 'A62563');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '7237701234567890', 'A71931');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '8234567890887890', 'A42409');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '9670001234567890', 'A27641');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '1034567890997890', 'A50991');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '1236901234567891', 'A69209');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '1944567894567892', 'A28437');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '4838901234567893', 'A43733');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '4234567432567894', 'A70565');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '5878901234567895', 'A41746');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '6232301234567896', 'A25856');
+insert into Card (CARD_TYPE, CARD_NUMBER, account_id) values ('Debit', '7232998901237897', 'A58316');
+
+
+
+
+
+Insert commands for 'DebitCard' table:
+insert into DebitCard (CARD_NUMBER) values ('1114567890123456');
+insert into DebitCard (CARD_NUMBER) values ('2234533234567890');
+insert into DebitCard (CARD_NUMBER) values ('3232267890567890');
+insert into DebitCard (CARD_NUMBER) values ('4234501234544890');
+insert into DebitCard (CARD_NUMBER) values ('5234555890123890');
+insert into DebitCard (CARD_NUMBER) values ('5678901266567890');
+insert into DebitCard (CARD_NUMBER) values ('7237701234567890');
+insert into DebitCard (CARD_NUMBER) values ('8234567890887890');
+insert into DebitCard (CARD_NUMBER) values ('9670001234567890');
+insert into DebitCard (CARD_NUMBER) values ('1034567890997890');
+insert into DebitCard (CARD_NUMBER) values ('1236901234567891');
+insert into DebitCard (CARD_NUMBER) values ('1944567894567892');
+insert into DebitCard (CARD_NUMBER) values ('4838901234567893');
+insert into DebitCard (CARD_NUMBER) values ('4234567432567894');
+insert into DebitCard (CARD_NUMBER) values ('5878901234567895');
+insert into DebitCard (CARD_NUMBER) values ('6232301234567896');
+insert into DebitCard (CARD_NUMBER) values ('7232998901237897');
+
+
+
+
+Insert commands for 'CreditCard' table:
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('1239967890123456', 'Credit', 5000.00, 1500.00, 1.5, 3500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('4234567890123456', 'Credit', 10000.00, 2500.00, 1.8, 7500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('32345678630123456', 'Credit', 7500.00, 2000.00, 1.6, 5500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('4234567824123456', 'Credit', 6000.00, 1800.00, 1.7, 4200.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('5234567490123456', 'Credit', 8000.00, 3000.00, 1.9, 5000.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('6234562490123456', 'Credit', 9500.00, 3500.00, 2.0, 6000.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('7234567890743456', 'Credit', 7000.00, 2500.00, 1.4, 4500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('8234427890123456', 'Credit', 8500.00, 4000.00, 1.5, 4500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('9234567893623456', 'Credit', 12000.00, 5000.00, 1.6, 7000.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('1025567890123450', 'Credit', 11000.00, 4500.00, 1.7, 6500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('1678901234567891', 'Credit', 5000.00, 1500.00, 1.5, 3500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('5678901234567892', 'Credit', 10000.00, 2500.00, 1.8, 7500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('3134567890167893', 'Credit', 7500.00, 2000.00, 1.6, 5500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('4138901234567894', 'Credit', 6000.00, 1800.00, 1.7, 4200.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('5134567890123455', 'Credit', 8000.00, 3000.00, 1.9, 5000.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('6178901234567896', 'Credit', 9500.00, 3500.00, 2.0, 6000.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('7138901234567897', 'Credit', 7000.00, 2500.00, 1.4, 4500.00);
+insert into CreditCard (CARD_NUMBER, CARD_TYPE, CREDIT_LIMIT, BALANCE_DUE, INTEREST_RATE, RUNNING_BALANCE) values ('8134590123456798', 'Credit', 8500.00, 4000.00, 1.5, 4500.00);
+
+
+ALTER TABLE CreditCard ADD monthly_payment DECIMAL(5, 2);
+
+
+UPDATE CreditCard 
+SET monthly_payment = 35.00
+
+
+
+
+Insert commands for 'Loans' table:
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Home Renovation', 'Secured', 'L31201', 50000.00, 450.00, 3.5, 'A13132');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Car Purchase', 'Secured', 'L41202', 30000.00, 275.00, 3.2, 'A13380');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Business Expansion', 'Secured', 'L23423', 100000.00, 900.00, 3.0, 'A19517');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Debt Consolidation', 'Unsecured', 'L42004', 20000.00, 350.00, 5.5, 'A25856');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Medical Expenses', 'Unsecured', 'L00345', 15000.00, 275.00, 5.8, 'A25903');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Vacation', 'Unsecured', 'L23006', 10000.00, 185.00, 6.0, 'A25959');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Home Renovation', 'Secured', 'L33207', 75000.00, 675.00, 3.1, 'A25966');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Car Purchase', 'Secured', 'L09998', 25000.00, 225.00, 3.3, 'A27641');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Business Expansion', 'Secured', 'L23409', 120000.00, 1080.00, 2.9, 'A28437');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Debt Consolidation', 'Unsecured', 'L34010', 18000.00, 315.00, 5.7, 'A28674');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Medical Expenses', 'Unsecured', 'L22011', 22000.00, 400.00, 5.9, 'A32032');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Vacation', 'Unsecured', 'L03012', 12000.00, 220.00, 6.1, 'A37280');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Home Renovation', 'Secured', 'L33313', 60000.00, 540.00, 3.4, 'A37448');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Car Purchase', 'Secured', 'L99914', 35000.00, 315.00, 3.2, 'A37681');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Business Expansion', 'Secured', 'L33015', 90000.00, 810.00, 3.0, 'A40705');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Debt Consolidation', 'Unsecured', 'L55016', 25000.00, 440.00, 5.6, 'A41746');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Medical Expenses', 'Unsecured', 'L99017', 17000.00, 310.00, 5.8, 'A42069');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Vacation', 'Unsecured', 'L08118', 14000.00, 255.00, 6.0, 'A42409');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Home Renovation', 'Secured', 'L00019', 80000.00, 720.00, 3.1, 'A42800');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Car Purchase', 'Secured', 'L12020', 40000.00, 360.00, 3.3, 'A43733');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Business Expansion', 'Secured', 'L03021', 110000.00, 990.00, 2.9, 'A46919');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Debt Consolidation', 'Unsecured', 'L11022', 23000.00, 405.00, 5.7, 'A47929');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Medical Expenses', 'Unsecured', 'L03023', 19000.00, 345.00, 5.9, 'A48258');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Vacation', 'Unsecured', 'L00324', 13000.00, 240.00, 6.1, 'A50820');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Home Renovation', 'Secured', 'L01025', 70000.00, 630.00, 3.4, 'A50991');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Car Purchase', 'Secured', 'L02026', 45000.00, 405.00, 3.2, 'A51806');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Business Expansion', 'Secured', 'L99927', 95000.00, 855.00, 3.0, 'A53614');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Debt Consolidation', 'Unsecured', 'L23028', 21000.00, 370.00, 5.6, 'A54871');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Medical Expenses', 'Unsecured', 'L06029', 16000.00, 290.00, 5.8, 'A55693');
+insert into Loans (LOAN_REASON, LOAN_TYPE, LOAN_ID, LOAN_AMOUNT, MONTHLY_PAY, INTEREST_RATE, ACCOUNT_ID) values ('Vacation', 'Unsecured', 'L67830', 11000.00, 200.00, 6.0, 'A58316');
+
+
+
+
+Insert commands for 'LoanPayments' table: 
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L31201', 'P12345', 450.00, TO_DATE('2024-10-01', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L41202', 'P23456', 275.00, TO_DATE('2024-09-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23423', 'P34567', 900.00, TO_DATE('2024-08-20', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L42004', 'P45678', 350.00, TO_DATE('2024-07-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L00345', 'P56789', 275.00, TO_DATE('2024-06-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23006', 'P67890', 185.00, TO_DATE('2024-05-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L33207', 'P78901', 675.00, TO_DATE('2024-04-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L09998', 'P89012', 225.00, TO_DATE('2024-03-30', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23409', 'P90123', 1080.00, TO_DATE('2024-02-20', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L34010', 'P01234', 315.00, TO_DATE('2024-01-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L22011', 'P13579', 400.00, TO_DATE('2023-12-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L03012', 'P24680', 220.00, TO_DATE('2023-11-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L33313', 'P35791', 540.00, TO_DATE('2023-10-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L99914', 'P46802', 315.00, TO_DATE('2023-09-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L33015', 'P57913', 810.00, TO_DATE('2023-08-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L55016', 'P68024', 440.00, TO_DATE('2023-07-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L99017', 'P79135', 310.00, TO_DATE('2023-06-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L08118', 'P80246', 255.00, TO_DATE('2023-05-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L00019', 'P91357', 720.00, TO_DATE('2023-04-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L12020', 'P02468', 360.00, TO_DATE('2023-03-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L03021', 'P12579', 990.00, TO_DATE('2023-02-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L11022', 'P25680', 405.00, TO_DATE('2023-01-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L03023', 'P35491', 345.00, TO_DATE('2022-12-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L00324', 'P46002', 240.00, TO_DATE('2022-11-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L01025', 'P53913', 630.00, TO_DATE('2022-10-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L02026', 'P68014', 405.00, TO_DATE('2022-09-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L99927', 'P19135', 855.00, TO_DATE('2022-08-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23028', 'P10246', 370.00, TO_DATE('2022-07-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L06029', 'P91457', 290.00, TO_DATE('2022-06-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L67830', 'P42468', 200.00, TO_DATE('2022-05-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L31201', 'P12395', 450.00, TO_DATE('2023-11-21', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L41202', 'P534456', 275.00, TO_DATE('2023-12-01', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23423', 'P349567', 900.00, TO_DATE('2023-12-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L42004', 'P415678', 350.00, TO_DATE('2024-01-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L00345', 'P567839', 275.00, TO_DATE('2024-01-20', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23006', 'P467890', 185.00, TO_DATE('2024-02-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L33207', 'P789011', 675.00, TO_DATE('2024-02-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L09998', 'P589012', 225.00, TO_DATE('2024-03-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23409', 'P909123', 1080.00, TO_DATE('2024-03-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L34010', 'P101234', 315.00, TO_DATE('2024-04-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L22011', 'P135729', 400.00, TO_DATE('2024-04-20', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L03012', 'P246380', 220.00, TO_DATE('2024-05-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L33313', 'P357591', 540.00, TO_DATE('2024-05-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L99914', 'P476802', 315.00, TO_DATE('2024-06-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L33015', 'P576913', 810.00, TO_DATE('2024-06-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L55016', 'P685024', 440.00, TO_DATE('2024-07-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L99017', 'P794135', 310.00, TO_DATE('2024-07-20', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L08118', 'P808246', 255.00, TO_DATE('2024-08-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L00019', 'P921357', 720.00, TO_DATE('2024-08-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L12020', 'P042468', 360.00, TO_DATE('2024-09-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L03021', 'P125579', 990.00, TO_DATE('2024-09-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L11022', 'P252680', 405.00, TO_DATE('2024-10-10', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L03023', 'P353491', 345.00, TO_DATE('2024-10-25', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L00324', 'P476002', 240.00, TO_DATE('2024-11-05', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L01025', 'P532913', 630.00, TO_DATE('2024-11-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L02026', 'P618014', 405.00, TO_DATE('2024-11-21', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L99927', 'P190135', 855.00, TO_DATE('2024-10-01', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L23028', 'P120246', 370.00, TO_DATE('2024-09-15', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L06029', 'P091457', 290.00, TO_DATE('2024-08-20', 'YYYY-MM-DD'));
+insert into LoanPayments (LOAN_ID, PAYMENT_ID, PAYMENT_AMOUNT, PAYMENT_DATE) values ('L67830', 'P424680', 200.00, TO_DATE('2024-07-10', 'YYYY-MM-DD'));
+
+
+
+
+Insert commands for ‘Purchases’ table:
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P12345', 'Amazon', 'VAmazon', '1025567890123450', 150.75, TO_DATE('2024-10-01', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P23456', 'Walmart', 'VWalmart', '1034567890997890', 89.99, TO_DATE('2024-09-15', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P34567', 'Target', 'VTarget', '1114567890123456', 45.50, TO_DATE('2024-08-20', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P45678', 'Best Buy', 'VBestBuy', '1236901234567891', 299.99, TO_DATE('2024-07-10', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P67890', 'Home Depot', 'VHomeDepot', '1678901234567891', 75.25, TO_DATE('2024-05-25', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P78901', 'Costco', 'VCostco', '1944567894567892', 200.00, TO_DATE('2024-04-15', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P89012', 'Kroger', 'VKroger', '2234533234567890', 60.45, TO_DATE('2024-03-30', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P90123', 'Starbucks', 'VStarbucks', '3134567890167893', 15.75, TO_DATE('2024-02-20', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P01234', 'Nike', 'VNike', '3232267890567890', 120.00, TO_DATE('2024-01-10', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P13579', 'Adidas', 'VAdidas', '32345678630123456', 85.50, TO_DATE('2023-12-15', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P68024', 'Gap', 'VGap', '4234567890123456', 45.00, TO_DATE('2023-07-25', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P79135', 'Old Navy', 'VOldNavy', '4838901234567893', 30.00, TO_DATE('2023-06-15', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P24780', 'WWD', 'VWWD', '4138901234567894', 150.00, TO_DATE('2023-11-05', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P32791', 'Nordstrom', 'VNordstrom', '4234501234544890', 200.00, TO_DATE('2023-10-25', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P46802', 'Sephora', 'VSephora', '4234567432567894', 75.00, TO_DATE('2023-09-15', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P57913', 'Ulta', 'VUlta', '4234567824123456', 60.00, TO_DATE('2023-08-05', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P80246', 'Banana Republic', 'VBananaRepublic', '5134567890123455', 100.00, TO_DATE('2023-05-05', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P92357', 'HandM', 'VHandM', '5234555890123890', 50.00, TO_DATE('2023-04-25', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P02478', 'Zara', 'VZara', '5234567490123456', 75.00, TO_DATE('2023-03-15', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P23579', 'Uniqlo', 'VUniqlo', '5678901234567892', 60.00, TO_DATE('2023-02-05', 'YYYY-MM-DD'));
+insert into Purchases (PURCHASE_ID, VENDOR_NAME, VENDOR_ID, CARD_NUMBER, PURCHASE_AMOUNT, PURCHASE_DATE) values ('P23680', 'Forever 21', 'VForever21', '5678901266567890', 40.00, TO_DATE('2023-01-25', 'YYYY-MM-DD'));
+
+
+
+
+Insert commands for 'Deposits' table:
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D14244', '10031.21', 'A13380', TO_DATE('2024-07-09', 'YYYY-MM-DD'));
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D12534', '566.23', 'A32032', TO_DATE('2024-06-09', 'YYYY-MM-DD'));
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D14644', '430.41', 'A28437', TO_DATE('2024-07-03', 'YYYY-MM-DD'));
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D12335', '400.32', 'A89785', TO_DATE('2024-10-11', 'YYYY-MM-DD'));
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D23344', '4300', 'A82694', TO_DATE('2024-02-19', 'YYYY-MM-DD'));
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D63245', '700', 'A65974', TO_DATE('2024-07-18', 'YYYY-MM-DD'));
+insert into Deposits(deposit_id, deposit_amount, account_id, deposit_date) values('D52523', '420', 'A65099', TO_DATE('2024-01-02', 'YYYY-MM-DD'));
+
+
+
+
