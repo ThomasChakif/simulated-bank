@@ -12,27 +12,27 @@ java -jar bankSimulation.jar
 
 ## Directory:
 
-//thc225Chakif
+    //simulated-bank
 
-    -README.md
+        -README.md
 
-    -bankSimulation.jar
+        -bankSimulation.jar
 
-    //bankSimulation
+        //bankSimulation
 
-        -bankSimulation.java
+            -bankSimulation.java
 
-        -bankSimulation.class
+            -bankSimulation.class
 
-    //Manifest
+        //Manifest
 
-        -Manifest.txt
+            -Manifest.txt
 
-        -ojdbc11.jar
+            -ojdbc11.jar
 
-    //dataGeneration
+        //dataGeneration
 
-        -dataGeneration.txt
+            -dataGeneration.txt
 
 
 WHAT TO KNOW FOR TESTING:
