@@ -3,9 +3,13 @@ This project is a banking simulation developed in Java that models a real-world 
 
 
 COMMANDS I RUN IN simulated-bank DIRECTORY TO RUN:
+
 To recreate jar file: 
+
 jar cfmv bankSimulation.jar Manifest/Manifest.txt -C . bankSimulation
+
 To run jar file: 
+
 java -jar bankSimulation.jar 
 
 
@@ -31,7 +35,7 @@ java -jar bankSimulation.jar
             -dataGeneration.txt
 
 
-WHAT TO KNOW FOR TESTING:
+## Testing:
 Good customer to test has Customer ID: 13805. Customer has savings, checking, and investment accounts as well as credit/debit cards attached to them.
 They also have loans attached to these accounts, so you can test all functionalities: loan payments, credit card payments, deposits, withdrawals, 
 new/replacement cards, card purchases, and fund transfers.
