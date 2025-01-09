@@ -139,7 +139,7 @@ Important information/constraints for each section:
 
 -all new loan terms are 36 months, or 3 years for simplicity. Minimum payments are calculated (in a simple manner) as (loan payment/months left) / interest rate
 
--loans MUST be attached to an account (can be any kind). A custoemr cannot have a loan without owning an account to attach it to
+-loans MUST be attached to an account (can be any kind). A customer cannot have a loan without owning an account to attach it to
 
 -loans have a status: Not Paid Off/Open if the loan amount > 0 and Paid Off/Closed if the loan amount < 0
 
