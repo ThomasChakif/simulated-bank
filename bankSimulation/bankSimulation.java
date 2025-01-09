@@ -64,6 +64,7 @@ public class bankSimulation {
                 }
                 conn.close(); //closes connection
         }while(conn == null);
+        scan.close();
     }
 
 
@@ -1021,7 +1022,6 @@ public class bankSimulation {
                                 }
                             }
 
-                            String newCCPaymentID = "";
                             if(newCardPayChoice.equals("Y")){
                                 boolean cardPayCheck = true;
                                 PreparedStatement getPIDStmt = conn.prepareStatement(("select CPAYMENT_ID from CardPayments"));
@@ -1232,7 +1232,6 @@ public class bankSimulation {
                             }
                         }
 
-                        String newDepID = "";
                         if(newDepChoice.equals("Y")){
                             boolean depCheck = true;
                             PreparedStatement getDepIDs = conn.prepareStatement("select deposit_id from deposits");
@@ -1390,8 +1389,6 @@ public class bankSimulation {
                                 }
                             }
 
-
-                            String newWithID = "";
 
                             if(newWithChoice.equals("Y")){
                                 boolean withCheck = true;
@@ -2905,5 +2902,6 @@ public class bankSimulation {
             se.printStackTrace();
             System.out.println("[Error]: Connection error. Re-enter login data");
         }
+        scan.close();
     }
 }
