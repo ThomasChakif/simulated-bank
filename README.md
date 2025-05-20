@@ -19,6 +19,7 @@ java -jar bankSimulation.jar
     //simulated-bank
         -README.md
         -bankSimulation.jar
+        -bank_sim_er_diagram.png
 
         //bankSimulation
             -bankSimulation.java
@@ -27,9 +28,6 @@ java -jar bankSimulation.jar
         //Manifest
             -Manifest.txt
             -ojdbc11.jar
-        
-        //er-diagram
-            -ThomasChakif_BankSimulation_Project_ER-Diagram.pdf
 
         //dataGeneration
             -dataGeneration.txt
